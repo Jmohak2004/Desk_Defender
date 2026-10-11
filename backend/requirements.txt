@@ -1,0 +1,15 @@
+# Desk Defender backend - Python 3.11-3.13 on macOS
+fastapi>=0.110
+uvicorn[standard]>=0.28
+websockets>=12.0
+pydantic>=2.6
+numpy>=1.26
+opencv-python>=4.9
+ultralytics>=8.1
+torch>=2.2
+torchvision>=0.17
+# macOS camera permission + AVFoundation device names (Continuity Camera discovery)
+pyobjc-framework-AVFoundation>=10.0; sys_platform == "darwin"
+# tests
+pytest>=8.0
+httpx>=0.27

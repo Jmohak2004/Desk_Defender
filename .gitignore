@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+frontend/node_modules/
+frontend/dist/
+# local runtime data (calibration, references, scores, settings)
+backend/data/
