@@ -6,6 +6,8 @@ import { api } from './utils/api';
 import { HomePage } from './pages/HomePage';
 import { CameraSetupPage } from './pages/CameraSetupPage';
 import { CalibrationPage } from './pages/CalibrationPage';
+import { GamePage } from './pages/GamePage';
+import { ResultsPage } from './pages/ResultsPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { HighScoresPage } from './pages/HighScoresPage';
 import { HowToPlayPage } from './pages/HowToPlayPage';
@@ -79,11 +81,8 @@ export const App: React.FC = () => {
         {page === 'home' && <HomePage />}
         {page === 'camera' && <CameraSetupPage />}
         {page === 'calibration' && <CalibrationPage />}
-        {(page === 'game' || page === 'results') && (
-          <div className="panel mx-auto mt-10 max-w-xl p-8 text-center text-slate-300">
-            The battlefield is not part of this build yet. Camera setup and calibration are fully usable.
-          </div>
-        )}
+        {page === 'game' && <GamePage />}
+        {page === 'results' && <ResultsPage />}
         {page === 'settings' && <SettingsPage />}
         {page === 'scores' && <HighScoresPage />}
         {page === 'help' && <HowToPlayPage />}
